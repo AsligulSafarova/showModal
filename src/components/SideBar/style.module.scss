@@ -1,0 +1,100 @@
+@import "../../sass/abstract/variable";
+
+.burger {
+    position: relative;
+    left: 2rem;
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgb(7, 131, 153);
+    cursor: pointer;
+
+}
+
+.hiden {
+    display: none;
+
+}
+
+.container {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 45rem;
+    background-color: $color-sidbar;
+    height: 100vh;
+    animation: toRight .8s;
+
+    &__toLeft {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 45rem;
+        background-color: $color-sidbar;
+        height: 100vh;
+        animation: toLeft .8s;
+
+    }
+
+
+    &__toLeft {
+        animation: toLeft .9s;
+    }
+
+    &__imgs {
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 1rem;
+        margin-left: 1rem;
+
+        & img {
+            width: 22rem;
+        }
+
+        &-close {
+            font-size: 4.5rem;
+            color: red;
+            font-weight: bold;
+            position: absolute;
+            right: -18rem;
+            cursor: pointer
+        }
+    }
+
+    &__items {
+        position: absolute;
+        top: 12rem;
+        left: 3rem;
+        font-size: 2.5rem;
+        color: rgb(82, 80, 80);
+        text-transform: capitalize;
+
+
+
+        &-item {
+            margin-bottom: 5rem;
+            cursor: pointer;
+
+            &--span {
+                margin-right: 2rem;
+            }
+
+
+        }
+
+    }
+
+    &__icons {
+        width: 60%;
+        position: absolute;
+        bottom: 3rem;
+        left: 10rem;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: space-evenly;
+        color: rgb(45, 126, 207);
+
+    }
+}
